@@ -1,0 +1,285 @@
+.containerParent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .formBlock {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+    .root {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #c9c9c9;
+      border-radius: 16px;
+    }
+  }
+
+  .logoAndMenuBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #2f2f2f;
+    max-width: 250px;
+    width: 100%;
+
+    .logoBlock {
+      top: 0px;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 60px;
+      position: fixed;
+      background: #2f2f2f;
+      max-width: 250px;
+      width: 100%;
+      z-index: 3;
+      cursor: pointer;
+
+      .logoName {
+        left: 5.14%;
+        right: 89.72%;
+        top: 2.85%;
+        bottom: 95.77%;
+
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+
+        color: #ffffff;
+      }
+
+      .logoIcon {
+        left: 10.62%;
+        right: 85.9%;
+        top: 2.76%;
+        bottom: 95.73%;
+        height: 28px;
+        width: 50px;
+      }
+    }
+
+    .menu {
+      padding: 20px;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: #2f2f2f;
+      min-height: 100vh;
+      height: 100%;
+      max-width: 250px;
+      width: 100%;
+
+      .logoRoutes {
+        top: 270px;
+        position: absolute;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 20px;
+          transition: 0.2s;
+          color: white;
+          line-height: 22px;
+          font-weight: 500;
+          font-style: normal;
+          border: 1px solid transparent;
+
+          img {
+            padding-right: 20px;
+          }
+
+          .activeIcon {
+            filter: invert(16%) sepia(45%) saturate(3808%) hue-rotate(344deg) brightness(89%)
+              contrast(91%);
+          }
+        }
+
+        .activeLink {
+          color: #ffb03b;
+          border-top: 1px solid #ebebeb;
+          border-bottom: 1px solid #ebebeb;
+        }
+      }
+    }
+  }
+}
+
+.charCount {
+  width: 236px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin: -17px 0 36px 0 !important;
+}
+
+.addLinkName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+  gap: 11px;
+
+  .inputNameLink {
+    margin-bottom: 17px;
+    color: white;
+    font-weight: 600;
+    // justify-content: flex-start;
+    align-self: flex-end;
+  }
+
+  .linkIcon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 17px;
+  }
+}
+
+.addLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin-left: -76px;
+}
+
+.inputName {
+  margin-bottom: 17px;
+  color: #ffb03b;
+  font-weight: 600;
+  justify-content: flex-start;
+}
+
+.input {
+  color: white !important;
+  padding: 5px;
+  margin-bottom: 42px;
+  background: transparent !important;
+  outline: none;
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid gray;
+}
+
+input:-internal-autofill-selected {
+  background: transparent !important;
+}
+
+.wrongUrl {
+  padding: 5px;
+  margin-bottom: 42px;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid gray;
+  color: red !important;
+}
+
+.inputWrongNameLink {
+  margin-bottom: 17px;
+  color: red;
+  font-weight: 600;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: -40px;
+}
+.editContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1150px;
+
+  h2 {
+    float: left;
+    margin: 154px 0 0 170px;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+}
+
+.editMenu {
+  max-width: 1140px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  .editRoutes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 76px 0 40px 170px;
+
+    a {
+      transition: 0.2s;
+      line-height: 22px;
+      font-weight: 500;
+      font-style: normal;
+      height: 66px;
+
+      .editButton {
+        background-color: #c9c9c9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+        cursor: pointer;
+      }
+
+      .activeEditButton {
+        background-color: #ffb03b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+    }
+  }
+}
+
+.NameBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  margin: 10px 0 10px 0;
+}
+
+.phoneBlock2 {
+  display: none;
+}
+
+.name {
+  color: white;
+  font-weight: 600;
+  line-height: 24px;
+}

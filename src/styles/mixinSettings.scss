@@ -1,0 +1,15 @@
+@import "./settings";
+
+$phone: 425px;
+$desktop: 1462px;
+$tablet: 768px;
+$laptop: 992px;
+
+$desktopScale: 0.77;
+$mobileScale: 0.88;
+
+@mixin flexOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

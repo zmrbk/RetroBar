@@ -1,0 +1,41 @@
+.wrongUrl {
+  padding: 5px;
+  margin-bottom: 42px;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid gray;
+  color: red !important;
+}
+
+.inputWrongNameLink {
+  margin-bottom: 17px;
+  color: red;
+  font-weight: 600;
+  justify-content: flex-start;
+  position: absolute;
+  margin-bottom: -60px;
+  margin-left: -260px;
+}
+
+.addLinkName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+  gap: 11px;
+
+  .inputNameLink {
+    margin-bottom: 17px;
+    color: white;
+    font-weight: 600;
+    align-self: flex-end;
+  }
+
+  .linkIcon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 17px;
+  }
+}

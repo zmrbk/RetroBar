@@ -1,0 +1,78 @@
+.sectionBg {
+  background-image: url("../../../../..//assets/mainPage/institutions/paper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0px 120px 90px 40px rgba(0, 0, 0, 0.6);
+  padding-bottom: 30%;
+
+  .sectionHeader {
+    position: relative;
+    margin: 0px auto 0;
+    padding-top: 270px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    .sketchTitle {
+      position: absolute;
+      top: 210px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #000000;
+    }
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .sectionBg {
+    margin-top: -45%;
+    height: 1700px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .sectionBg {
+    height: 1400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sectionBg {
+    margin-top: -75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionBg {
+    margin-bottom: -55%;
+    height: 100%;
+    height: 1700px;
+
+    .sectionHeader {
+      padding-top: 200px;
+    }
+
+    .sketchTitle {
+      margin-top: -70px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sectionBg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .sectionBg {
+    width: 106%;
+  }
+}

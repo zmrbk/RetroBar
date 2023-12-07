@@ -1,0 +1,49 @@
+.mainContent {
+  width: 100%;
+  min-width: 100vw;
+
+  .calendar {
+    right: 100px;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .mainBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .headerBg {
+    margin-top: -125px !important;
+    padding-bottom: 200px;
+    padding-top: 120px;
+    background-image: url("../../../assets/mainPage/headerSlider/mainHeaderBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1880px) {
+  .mainContent {
+    overflow-x: hidden !important;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainContent {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .mainContent {
+    width: 100% !important;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,106 @@
+.card {
+  padding: 5px;
+  background-image: url("../../assets/photoPage/backDefault.png");
+  background-repeat: no-repeat;
+  max-width: 725px;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  min-height: 365px;
+  overflow: hidden;
+
+  .cardText {
+    z-index: 2;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 100%;
+    max-width: 600px;
+    span {
+      padding-top: 10px;
+    }
+    .bottomText {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      .views {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        column-gap: 10px;
+        img {
+          padding-top: 5px;
+        }
+      }
+      .date {
+        max-width: 120px;
+        width: 100%;
+        font-weight: 700;
+      }
+    }
+    @media screen and (max-width: 782px) {
+      left: 2%;
+    }
+  }
+  .cardImage {
+    position: absolute;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+  }
+  &.horizontal {
+    grid-column: span 2;
+    padding: 10px;
+    background-image: url("../../assets/photoPage/backHorizontal.png");
+    background-repeat: no-repeat;
+    .cardImage {
+      max-width: 710px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 782px) {
+      display: none;
+    }
+  }
+
+  &.vertical {
+    grid-row: span 2;
+    padding: 10px;
+    background-image: url("../../assets/photoPage/verticalBg.png");
+    background-repeat: no-repeat;
+    .cardImage {
+      max-width: 350px;
+      width: 100%;
+    }
+
+    .cardText {
+      max-width: 330px;
+    }
+
+    @media screen and (max-width: 1135px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 770px) {
+      display: block;
+      min-height: 725px;
+    }
+  }
+
+  &.default {
+    .cardText {
+      max-width: 330px;
+      .bottomText {
+        padding-top: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    max-width: 280px;
+
+    .cardImage {
+      width: 97%;
+    }
+  }
+}

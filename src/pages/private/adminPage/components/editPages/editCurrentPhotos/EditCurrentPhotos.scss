@@ -1,0 +1,110 @@
+.editCurrentCards {
+  justify-content: center;
+  max-width: 1510px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 365px);
+  padding-top: 55px;
+  padding-bottom: 5%;
+  gap: 45px;
+  margin-left: 34%;
+
+  .innerCard {
+    .card {
+      padding: 5px;
+      background-image: url("../../../../../../assets/photoPage/backDefault.png");
+      background-repeat: no-repeat;
+      max-width: 725px;
+      height: auto;
+      border-radius: 20px;
+      position: relative;
+      min-height: 365px;
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      .cardText {
+        z-index: 2;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        width: 100%;
+        max-width: 600px;
+
+        span {
+          padding-top: 10px;
+        }
+
+        .bottomText {
+          padding-top: 20px;
+          display: flex;
+          justify-content: space-around;
+
+          .views {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            column-gap: 10px;
+
+            img {
+              padding-top: 5px;
+            }
+          }
+
+          .date {
+            max-width: 120px;
+            width: 100%;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .cardImage {
+        position: absolute;
+        border-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .cardText {
+        max-width: 330px;
+
+        .bottomText {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .edButton {
+        background-color: #ffb03b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 155px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+
+      .delButton {
+        background-color: #c9c9c9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 155px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+    }
+  }
+}

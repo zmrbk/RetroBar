@@ -1,0 +1,211 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 10;
+}
+
+.wrapper {
+  backdrop-filter: blur(80px);
+}
+
+.downside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18%;
+}
+
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  background: url("../../../assets/calendar/back.png");
+}
+
+.cal {
+  max-width: 340px;
+  background-color: transparent;
+  border: none;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.photos {
+  display: grid;
+  gap: 30px;
+  margin-left: 10%;
+  grid-template-columns: repeat(2, 370px);
+  height: 460px;
+}
+
+.innerCardC {
+  height: 190px;
+  margin-bottom: 20px;
+}
+
+.buttonsC {
+  padding: 13px 24px;
+  background: #c9c9c9;
+  color: black !important;
+}
+
+.highlight {
+  color: rgb(33, 207, 33) !important;
+}
+
+.buttons-active {
+  font-weight: bold;
+  color: black !important;
+  padding: 13px 24px;
+  background: #ffb03b;
+}
+
+.top {
+  width: 750px;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-start;
+  margin: 0 0 5% 7%;
+}
+
+.top button {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #ff6d00;
+  transition-duration: 0.1s;
+  border-radius: 9px;
+  width: 37px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #ff6d00;
+  transition-duration: 0.1s;
+  border-radius: 9px;
+  width: 37px;
+}
+
+.react-calendar__tile {
+  color: white;
+  background-color: transparent;
+}
+
+.react-calendar__navigation__arrow:hover,
+.react-calendar__navigation__label:hover {
+  background-color: transparent !important;
+  transition-duration: 0.1s;
+  border-radius: 9px;
+  width: 37px;
+}
+
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent !important;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__label {
+  color: white;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 33.5px;
+  border-radius: 8px;
+}
+
+.inputCal {
+  height: 33px;
+  width: 307px;
+  border: none;
+}
+
+.searchIcon {
+  background-color: #ff6d00;
+  height: 33px;
+  border-radius: 7px;
+  width: 36px;
+}
+
+/* for items  */
+.cardC {
+  max-width: 330px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.cardTextC {
+  padding-top: 30%;
+  padding-left: 5%;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+}
+
+.cardTextC span {
+  padding-top: 10px;
+}
+
+.bottomTextC {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.viewsC {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.viewsC img {
+  padding-top: 5px;
+}
+
+.dateC {
+  max-width: 120px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.cardImageC {
+  position: absolute;
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bottomTextC {
+  padding-top: 0;
+}

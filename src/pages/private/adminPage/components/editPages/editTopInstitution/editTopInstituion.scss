@@ -1,0 +1,121 @@
+.editTopInstCards {
+  justify-content: center;
+  max-width: 1510px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 365px);
+  padding-top: 55px;
+  padding-bottom: 5%;
+  gap: 45px;
+  margin-left: 34%;
+
+  .editfilmContent {
+    .editfilmSlide {
+      position: relative;
+
+      .editfilmSlideFrame {
+        position: relative;
+        width: 400px;
+      }
+
+      .editfilmSlidePhoto {
+        position: absolute;
+        width: 379px;
+        margin-top: -201px;
+        margin-left: 7px;
+        height: 151px;
+      }
+
+      .editfilmSlidePhotoContent {
+        position: absolute;
+        margin-top: -201px;
+        margin-left: 12px;
+        width: 300px;
+
+        .editfilmTitle {
+          font-family: "Mont";
+          font-weight: 800;
+          font-size: 23px;
+          margin-bottom: 10%;
+        }
+
+        .editfilmAddress {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+
+          .editfilmAddressIcon {
+            width: 10px;
+            height: 10px;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .edButton {
+        background-color: #ffb03b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 155px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+
+      .delButton {
+        background-color: #c9c9c9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 155px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .editfilmContent {
+    .editfilmSlide {
+      .editfilmSlidePhotoContent {
+        margin-left: -1%;
+        width: 250px;
+
+        .editfilmTitle {
+          font-size: 19px;
+        }
+
+        .editfilmAddress {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .editfilmContent {
+    .editfilmSlide {
+      .editfilmSlidePhotoContent {
+        width: 150px;
+      }
+    }
+  }
+}

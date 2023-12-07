@@ -1,0 +1,32 @@
+.videoPage {
+  background-image: url("../../../assets/videoPage/videoPageBg.png");
+  background-size: cover;
+  margin-top: -150px;
+  padding-top: 230px;
+  min-height: 100vh;
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .mainPlayer {
+      max-width: 900px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+  }
+
+  .videoCoverCard {
+    margin-left: 40px;
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-top: 300px;
+  }
+}

@@ -1,0 +1,157 @@
+@import "../../styles/primaryColors.scss";
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.modalContent {
+  max-width: 800px;
+  width: 100%;
+  max-height: 633px;
+  overflow: hidden;
+  .sliderImgBlock {
+    max-height: 500px;
+    overflow: hidden;
+    .sliderImg {
+      width: 60%;
+      overflow: hidden;
+      margin-left: 180px;
+      border-radius: 10px;
+      @media screen and (max-width: 700px) {
+        margin-left: 150px;
+      }
+      @media screen and (max-width: 625px) {
+        margin-left: 130px;
+      }
+      @media screen and (max-width: 500px) {
+        margin-left: 100px;
+        width: 65%;
+      }
+
+      @media screen and (max-width: 410px) {
+        margin-left: 80px;
+      }
+      @media screen and (max-width: 360px) {
+        margin-left: 75px;
+      }
+    }
+  }
+}
+
+.modalImgText {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px 0 180px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 625px) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  @media screen and (max-width: 565px) {
+    padding-right: 100px;
+  }
+  @media screen and (max-width: 535px) {
+    padding-right: 80px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-right: 60px;
+    padding-left: 90px;
+  }
+  @media screen and (max-width: 450px) {
+    padding-right: 40px;
+  }
+  @media screen and (max-width: 340px) {
+    padding-right: 20px;
+  }
+
+  .modalHeader {
+    h5 {
+      font-size: 20px;
+      color: $whiteTitleColor;
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    background-color: $whiteTitleColor;
+    height: 36px;
+    width: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  column-gap: 10px;
+  padding-right: 140px;
+  @media screen and (max-width: 625px) {
+    padding-right: 120px;
+  }
+  @media screen and (max-width: 565px) {
+    padding-right: 100px;
+  }
+  @media screen and (max-width: 535px) {
+    padding-right: 80px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-right: 60px;
+  }
+  @media screen and (max-width: 450px) {
+    padding-right: 40px;
+    a {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    padding-right: 15px;
+  }
+  a {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    column-gap: 10px;
+    color: white;
+  }
+
+  .downloadBtn {
+    background-color: $whiteTitleColor;
+    border-radius: 10px;
+    &:hover {
+      background-color: #ea6601;
+    }
+  }
+}

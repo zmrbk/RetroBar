@@ -1,0 +1,63 @@
+.formContainer {
+  width: 80%;
+  margin-top: -40px;
+
+  h2 {
+    float: left;
+    margin: 154px 0 0 220px;
+    cursor: pointer;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+
+    .formLeft {
+      width: 50%;
+      max-width: 610px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -40px;
+
+      h3 {
+        justify-content: flex-start;
+      }
+
+      .addVideo {
+        width: 450px;
+        margin: 58px 63px 92px 36px;
+      }
+
+      .addLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
+        margin-left: -76px;
+
+        .linkIcon {
+          width: 16px;
+          height: 20px;
+          margin: 5px;
+          margin-bottom: 17px;
+        }
+      }
+    }
+
+    .formRight {
+      width: 50%;
+      max-width: 610px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 58px;
+    }
+  }
+}

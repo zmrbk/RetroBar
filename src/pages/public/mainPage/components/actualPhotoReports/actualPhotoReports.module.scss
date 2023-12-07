@@ -1,0 +1,135 @@
+.sectionBg {
+  background-image: url("../../../../../assets/mainPage/actualPhotoReports//actualReportBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 10%;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        font-size: 30px;
+        margin-left: 8%;
+      }
+
+      .bigStar {
+        margin-bottom: 25px;
+      }
+
+      .smallStar {
+        margin-top: 15px;
+      }
+    }
+
+    .smile {
+      position: absolute;
+      margin-top: 400px;
+      margin-left: -45px;
+    }
+
+    .cards {
+      justify-content: center;
+      max-width: 1510px;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 365px);
+      padding-top: 55px;
+      padding-bottom: 5%;
+
+      @media screen and (max-width: 1335px) {
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 800px) {
+        justify-content: center;
+        grid-template-columns: 365px, 365px !important;
+      }
+
+      @media screen and (max-width: 769px) {
+        justify-content: center;
+        grid-template-columns: 345px, 345px !important;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-left: 15%;
+      }
+    }
+
+    .btnAllPhotos {
+      display: flex;
+      justify-content: center !important;
+
+      Button {
+        width: 170px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1880px) {
+    margin-bottom: 15%;
+
+    .container {
+      .smile {
+        position: absolute;
+        margin-left: -1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1445px) {
+    margin-bottom: 75%;
+
+    .container {
+      .smile {
+        position: absolute;
+        margin-left: -1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    margin-bottom: 120%;
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 40px 0 85% 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 370%;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding-bottom: 415%;
+  }
+
+  @media screen and (max-width: 321px) {
+    padding-bottom: 495%;
+    margin-left: -7%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title {
+    .bigStar {
+      display: none;
+    }
+
+    .smallStar {
+      display: none;
+    }
+  }
+}

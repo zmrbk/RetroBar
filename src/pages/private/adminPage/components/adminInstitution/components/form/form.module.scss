@@ -1,0 +1,211 @@
+.formContainer {
+  width: 80%;
+  margin-top: -40px;
+
+  h2 {
+    float: left;
+    margin: 154px 0 0 226px;
+    cursor: pointer;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 190px 0 170px 226px;
+
+    .formAddPhoto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-left: -170px;
+
+      .formLeft {
+        width: 50%;
+        max-width: 610px;
+        top: 241px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          justify-content: flex-start;
+        }
+
+        .addPhoto {
+          width: 450px;
+          margin: 58px 63px 92px 0px;
+        }
+      }
+
+      .formRight {
+        width: 50%;
+        max-width: 610px;
+        top: 241px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 40px 63px 92px 0px;
+        gap: 20px;
+
+        .addLinkOne {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          max-width: 400px;
+          margin-right: -240px;
+        }
+
+        .addPhotoCircle {
+          width: 267px;
+          height: 267px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .nameDescription {
+      .institutionDescription {
+        color: white !important;
+        padding: 5px;
+        margin-bottom: 42px;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+    }
+
+    .ratingScale {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 960px;
+      margin: 87px 0 32px 0;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 960px;
+      margin: 87px 0 32px 0;
+
+      .ratingStarsBlock {
+        display: flex;
+        flex-direction: column;
+        width: 191px;
+        gap: 15px;
+
+        .ratingNameBlock {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 21px;
+        }
+
+        .starIconsBlock {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 21px;
+
+          .starIcons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+          }
+
+          .redStarIcons {
+            filter: invert(14%) sepia(63%) saturate(6283%) hue-rotate(358deg) brightness(87%)
+              contrast(120%);
+          }
+        }
+      }
+    }
+
+    .scale {
+      width: 960px;
+
+      .scalePhoto {
+        width: 960px;
+        margin-bottom: 20px;
+      }
+
+      .scaleNumbers {
+        display: flex;
+        max-width: 960px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .descForm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: -78px;
+
+      .NameBlock {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 11px;
+      }
+
+      .bigName {
+        margin-bottom: 20px;
+        margin-left: 0;
+        color: #ffb03b;
+      }
+
+      .twoForms {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 112px;
+      }
+
+      .addLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
+      }
+    }
+
+    .wrongUrl {
+      padding: 5px;
+      margin-bottom: 42px;
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 400px;
+      border-bottom: 1px solid gray;
+      color: red !important;
+    }
+
+    .inputWrongNameLink {
+      margin-bottom: 17px;
+      color: red;
+      font-weight: 600;
+      justify-content: flex-start;
+    }
+
+    .name {
+      color: white;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.Cardscontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1150px;
+
+  h2 {
+    float: left;
+    margin: 154px 0 0 170px;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+
+  .EditCards {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 30px;
+    width: 100%;
+    max-width: 1150px;
+    margin-left: 350px;
+
+    .Card {
+      width: 400px;
+
+      img:first-child {
+        position: relative;
+        height: 300px;
+      }
+
+      img:nth-child(2) {
+        position: absolute;
+        margin-left: -20.3%;
+        margin-top: 0.95%;
+        height: 220px;
+      }
+
+      .cardsText {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 13px;
+        width: 380px;
+        margin-top: -60px;
+
+        p {
+          font-family: "Mont";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 25px;
+          color: #000000;
+        }
+
+        .cardsTextChild {
+          h3 {
+            font-family: "Mont";
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            color: #000000;
+          }
+
+          h5 {
+            font-family: "Mont";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000000;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .edButton {
+          background-color: #ffb03b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 155px;
+          height: 54px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 25px;
+          color: black;
+        }
+
+        .delButton {
+          background-color: #c9c9c9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 155px;
+          height: 54px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 25px;
+          color: black;
+        }
+      }
+    }
+  }
+}

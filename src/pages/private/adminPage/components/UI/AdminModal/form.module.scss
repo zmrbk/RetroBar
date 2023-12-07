@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .MuiTextField-root {
+    margin: 10px !important;
+    width: 300px;
+  }
+
+  .MuiTextBasse-root {
+    margin: 10px !important;
+    width: 300px;
+  }
+}

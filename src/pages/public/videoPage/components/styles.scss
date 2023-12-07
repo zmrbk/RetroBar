@@ -1,0 +1,27 @@
+.swiper-button-prev {
+  left: 40px !important;
+}
+
+.mySwiperVideo {
+  .swiper-button-next {
+    background-image: url("../../../../assets/photoPage/arrowRight.png");
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    &::after {
+      content: "";
+      font-family: none;
+    }
+  }
+
+  .swiper-button-prev {
+    background-image: url("../../../../assets/photoPage/arrowLeft.png");
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    &::after {
+      content: "";
+      font-family: none;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.modalContent {
+  border-radius: 12px;
+
+  .modalVideo {
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .modalText {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+
+    .rightContent {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .leftContent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      div {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+      }
+    }
+  }
+}

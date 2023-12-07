@@ -1,0 +1,29 @@
+.mainContent2 {
+  width: 100%;
+  min-width: 100vw;
+
+  .mainBg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .headerBg2 {
+    margin-top: -125px !important;
+    padding-bottom: 200px;
+    padding-top: 120px;
+    background-image: url("../../../assets/mainPage/headerSlider/mainHeaderBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sectionContent2 {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+}

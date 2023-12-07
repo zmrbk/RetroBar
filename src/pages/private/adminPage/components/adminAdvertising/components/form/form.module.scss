@@ -1,0 +1,157 @@
+.formContainer {
+  width: 80%;
+  margin-top: -40px;
+
+  .choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 154px 0 7px 226px;
+
+    h2 {
+      cursor: pointer;
+    }
+
+    .activeChoice {
+      color: #ffb03b;
+    }
+
+    span {
+      color: #ffb03b;
+      font-weight: 600;
+    }
+  }
+
+  .formDivide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 152px 0 0px -42px;
+
+    .choosing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .formLeft {
+          width: 50%;
+          max-width: 610px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            justify-content: flex-start;
+          }
+
+          .addPhoto {
+            width: 450px;
+            margin: 58px 63px 92px 36px;
+          }
+
+          .addLink {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 400px;
+
+            .linkIcon {
+              width: 16px;
+              height: 20px;
+              margin: 5px;
+              margin-bottom: 17px;
+            }
+          }
+        }
+      }
+
+      .formRight {
+        position: static;
+        width: 50%;
+        max-width: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0px 50px -35px;
+
+        .charCount {
+          width: 236px;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          opacity: 0.8;
+          margin: -17px 0 36px 0;
+        }
+      }
+
+      .poster {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 150px;
+
+        .wrongUrl {
+          padding: 5px;
+          margin-bottom: 42px;
+          background: transparent;
+          outline: none;
+          border: none;
+          width: 400px;
+          border-bottom: 1px solid gray;
+          color: red;
+        }
+
+        .inputWrongNameLink {
+          margin-bottom: 17px;
+          color: red;
+          font-weight: 600;
+          justify-content: flex-start;
+        }
+
+        .addBanner {
+          width: 890px;
+          margin: -90px 63px 92px -38px;
+        }
+
+        .addLink {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          max-width: 400px;
+          margin-left: -576px;
+
+          .addLinkName {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin-left: -200px;
+
+            .linkIcon {
+              width: 16px;
+              height: 20px;
+              margin: 5px;
+              margin-bottom: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

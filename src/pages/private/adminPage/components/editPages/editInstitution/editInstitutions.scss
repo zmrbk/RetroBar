@@ -1,0 +1,121 @@
+.editInstCards {
+  justify-content: center;
+  max-width: 1510px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 620px);
+  padding-top: 55px;
+  padding-bottom: 5%;
+  gap: 5px;
+  margin-left: 34%;
+
+  .editswiper-wrapper {
+    display: flex;
+    align-items: center;
+    color: #000;
+    height: 100vh;
+
+    .editslide {
+      position: relative;
+      width: 405px;
+      height: 465px;
+      margin-top: -25%;
+    }
+
+    .editframeImg {
+      position: absolute;
+      width: 405px;
+      height: 465px;
+      margin-top: -55%;
+    }
+
+    .editsliderImg {
+      position: absolute;
+      top: 38px;
+      left: 36px;
+      width: 285px;
+      height: 390px;
+      margin-top: -55%;
+    }
+
+    .editswiper-slide-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      margin-top: -95%;
+    }
+
+    .editsection {
+      margin-bottom: 30px;
+    }
+
+    .editlogoSection {
+      display: flex;
+    }
+
+    .editlogo {
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .editlogoTitle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: white;
+    }
+
+    .editaddress {
+      display: flex;
+      color: white;
+    }
+
+    .edittext {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      color: white;
+    }
+
+    .editprice {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .editiconMeals {
+      margin-right: 3px;
+    }
+
+    .editicon {
+      margin-right: 10px;
+      color: white;
+    }
+
+    .editmealsPrice {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    .editsectionMeals {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .editrating {
+      display: flex;
+      align-items: center;
+    }
+
+    .editratingStars {
+      margin-right: 5px;
+    }
+
+    .editratingTotal {
+      font-weight: 600;
+      font-size: 14px;
+      color: white;
+    }
+  }
+}

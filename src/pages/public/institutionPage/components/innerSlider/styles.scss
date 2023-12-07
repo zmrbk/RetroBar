@@ -1,0 +1,40 @@
+.innerSlider {
+  margin-top: 50px;
+  .eventSlider {
+    max-width: 314px;
+    width: 60%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .swiper-wrapper {
+      padding-left: 200px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .swiper-wrapper {
+      padding-left: 100px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .swiper-wrapper {
+      padding-left: 50px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .swiper-wrapper {
+      padding-left: 20px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .swiper-wrapper {
+      padding-left: 0;
+    }
+  }
+}
+
+.eventImg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  max-width: 314px;
+}

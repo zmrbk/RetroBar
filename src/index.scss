@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.MuiSlider-markLabel {
+  color: white !important;
+}
+
+.MuiSlider-markLabelActive {
+  color: yellow !important;
+}
+
+.css-1aznpnh-MuiSlider-root {
+  color: #ffb03b !important;
+}
+
+.css-14pt78w-MuiSlider-rail {
+  color: gray;
+}
+
+.css-1tcs2i1-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid #2f2f2f !important;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media screen and (max-width: 321px) {
+    overflow-x: hidden;
+  }
+}
+
+.MuiTextField-root {
+  margin: 10px !important;
+  width: 350px !important;
+}
+
+.MuiButtonBase-root {
+  margin: 10px !important;
+  min-width: 1px !important;
+  background-color: #ffb03b !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  padding: 6px !important;
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+  border-bottom: 2px solid #ffb03b !important;
+}
+
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #ef9105 !important;
+}

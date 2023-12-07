@@ -1,0 +1,89 @@
+.cardsBlock {
+  width: 1810px;
+  margin-top: 100px;
+
+  h1 {
+    margin-left: 34%;
+  }
+
+  .editVideoCards {
+    justify-content: center;
+    max-width: 1510px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 365px);
+    padding-top: 55px;
+    padding-bottom: 5%;
+    gap: 45px;
+    margin-left: 34%;
+
+    .innerCard {
+      .videoCoverAd {
+        max-width: 330px;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        .videoCoverImgAd {
+          max-width: 330px;
+          width: 100%;
+        }
+
+        .playIconAd {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+
+        .innerContentAd {
+          position: absolute;
+          bottom: 20px;
+          left: 3%;
+          cursor: pointer;
+
+          .contentViewsAd {
+            margin-bottom: 10px;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: -11%;
+
+      .edButton {
+        background-color: #ffb03b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+
+      .delButton {
+        background-color: #c9c9c9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 54px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: black;
+      }
+    }
+  }
+}

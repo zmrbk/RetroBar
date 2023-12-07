@@ -1,0 +1,21 @@
+.reportageSection {
+  background-image: url("../../../../../assets/mainPage/institutions/paper.png");
+  background-size: 100% 100%;
+  padding: 200px 0 200px;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .title {
+      font-size: 32px;
+      color: #000;
+    }
+    .slider {
+      margin-top: 35px;
+      h2 {
+        font-size: 28px;
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.searchBlock {
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+  input {
+    color: #374151;
+    border-radius: 8px;
+    border: none;
+    margin-left: auto;
+    padding-left: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    cursor: pointer;
+    padding: 10px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: transparent;
+    background-color: #ff6d00;
+    margin-left: -14px;
+    border: none;
+  }
+}

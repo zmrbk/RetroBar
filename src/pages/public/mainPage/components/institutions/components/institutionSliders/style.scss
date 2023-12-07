@@ -1,0 +1,444 @@
+.institutionSwiper {
+  padding-top: 10%;
+  padding-bottom: 40%;
+  margin: 0 auto;
+
+  .swiper-pointer-events {
+    height: 700px;
+    padding-top: 80px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    color: #000;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    transition: all 200ms linear;
+    transform: scale(0.9) !important;
+  }
+
+  .slide {
+    position: relative;
+    width: 700px;
+    height: 800px;
+  }
+
+  .frameImg {
+    position: absolute;
+    width: 600px;
+    height: 700px;
+  }
+
+  .sliderImg {
+    position: absolute;
+    top: 53px;
+    left: 37px;
+    width: 448px;
+    height: 589px;
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.3) !important;
+    margin-left: -100px;
+    cursor: pointer;
+  }
+
+  .swiper-slide-prev .swiper-slide-content,
+  .swiper-slide-next .swiper-slide-content,
+  .swiper-slide-dublicate .swiper-slide-content {
+    display: none;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    filter: grayscale(80%);
+    opacity: 0.7;
+  }
+
+  .swiper-slide-next {
+    margin-left: 100px;
+  }
+
+  .swiper-slide-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    margin-bottom: 370px;
+    margin-left: -170px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .logoSection {
+    display: flex;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .logoTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .address {
+    display: flex;
+  }
+
+  .text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconMeals {
+    margin-right: 3px;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .mealsPrice {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .sectionMeals {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .ratingStars {
+    margin-right: 5px;
+  }
+
+  .ratingTotal {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .institutionSwiper {
+    .slide {
+      width: 405px;
+      height: 465px;
+      margin-top: 11px;
+    }
+
+    .frameImg {
+      width: 405px;
+      height: 465px;
+    }
+
+    .sliderImg {
+      top: 38px;
+      left: 36px;
+      width: 285px;
+      height: 390px;
+    }
+
+    .swiper-slide-content {
+      margin-top: 10%;
+      margin-right: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .institutionSwiper {
+    .slide {
+      width: 375px;
+      height: 425px;
+    }
+
+    .frameImg {
+      position: absolute;
+      width: 345px;
+      height: 415px;
+    }
+
+    .sliderImg {
+      position: absolute;
+      top: 40px;
+      left: 34px;
+      width: 255px;
+      height: 355px;
+    }
+
+    .swiper-slide-content {
+      margin-bottom: 300px;
+      margin-left: -70px;
+    }
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .institutionSwiper {
+    .slide {
+      width: 355px;
+      height: 405px;
+    }
+
+    .frameImg {
+      position: absolute;
+      width: 285px;
+      height: 395px;
+    }
+
+    .sliderImg {
+      position: absolute;
+      top: 35px;
+      left: 25px;
+      width: 205px;
+      height: 320px;
+    }
+
+    .swiper-slide-content {
+      margin-bottom: 300px;
+      margin-left: -10px;
+    }
+
+    .logo {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+
+    .logoTitle {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .address {
+      display: flex;
+    }
+
+    .text {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 26px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .ratingStars {
+      margin-right: 4px;
+    }
+
+    .ratingTotal {
+      font-weight: 600;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .institutionSwiper {
+    width: 100%;
+    margin: 1% auto 12%;
+
+    .slide {
+      width: 385px;
+      margin-left: 25%;
+      height: 455px;
+    }
+
+    .frameImg {
+      position: absolute;
+      width: 385px;
+      height: 465px;
+    }
+
+    .sliderImg {
+      position: absolute;
+      top: 35px;
+      left: 25px;
+      width: 275px;
+      height: 390px;
+    }
+
+    .swiper-slide-content {
+      margin-bottom: 280px;
+      margin-left: -25%;
+    }
+
+    .logo {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+
+    .logoTitle {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .address {
+      display: flex;
+    }
+
+    .text {
+      font-weight: 600;
+      font-size: 9px;
+      line-height: 23px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .ratingStars {
+      margin-right: 4px;
+    }
+
+    .ratingTotal {
+      font-weight: 600;
+      font-size: 9px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .institutionSwiper {
+    .swiper-slide-active {
+      margin-left: -50px;
+    }
+
+    .swiper-slide-active:nth-child(6) {
+      margin-left: -140px;
+    }
+
+    .slide {
+      width: 305px;
+      height: 365px;
+      margin-top: 11px;
+    }
+
+    .frameImg {
+      width: 305px;
+      height: 365px;
+    }
+
+    .sliderImg {
+      top: 35px;
+      left: 25px;
+      width: 215px;
+      height: 300px;
+    }
+
+    .swiper-slide-content {
+      margin-top: 120%;
+      margin-left: -55%;
+
+      .section {
+        margin-top: -20px;
+      }
+    }
+
+    .rating {
+      margin-top: -20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .institutionSwiper {
+    transform: translate3d(0, 0, 0);
+
+    .slide {
+      width: 275px;
+      height: 365px;
+      margin-top: 15px;
+    }
+
+    .frameImg {
+      width: 275px;
+      height: 365px;
+    }
+
+    .sliderImg {
+      top: 35px;
+      left: 25px;
+      width: 195px;
+      height: 294px;
+    }
+
+    .swiper-slide-content {
+      margin-top: 120%;
+      margin-left: -55%;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .institutionSwiper {
+    width: 100%;
+
+    .slide {
+      width: 235px;
+      height: 345px;
+      margin-left: 28%;
+    }
+
+    .frameImg {
+      width: 235px;
+      height: 345px;
+    }
+
+    .sliderImg {
+      top: 35px;
+      left: 25px;
+      width: 165px;
+      height: 274px;
+    }
+
+    .swiper-slide-content {
+      margin-top: 130%;
+      margin-left: -55%;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .institutionSwiper {
+    .swiper-slide-active {
+      margin-left: -60px;
+    }
+
+    .swiper-slide-active:nth-child(6) {
+      margin-left: -150px;
+    }
+
+    .swiper-slide-content {
+      margin-top: 170%;
+    }
+  }
+}

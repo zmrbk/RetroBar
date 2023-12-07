@@ -1,0 +1,219 @@
+@import "../../../styles/primaryColors.scss";
+
+.institutionPage {
+  background-image: url("../../../assets/instutionPage/pageBg.png");
+  background-size: cover;
+  min-height: 200vh;
+  margin-top: -150px;
+  padding-top: 170px;
+  .container {
+    max-width: 1300px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    .breadCrumbs {
+      display: flex;
+      column-gap: 40px;
+      position: absolute;
+      transition: 0.1s;
+      padding-left: 95px;
+      a {
+        color: rgb(232, 228, 228);
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        padding: 65px 0 0 20px;
+      }
+      @media screen and (max-width: 340px) {
+        font-style: 12px;
+      }
+    }
+    @media screen and (max-width: 405px) {
+      .breadCrumbs {
+        padding-left: 0;
+        column-gap: 10px;
+      }
+    }
+  }
+}
+
+.institutionPageContent {
+  padding-top: 100px;
+  h4 {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: $fontTitleColor;
+    @media screen and (max-width: 800px) {
+      margin-top: 40px;
+    }
+  }
+  .aboutBar {
+    display: flex;
+    max-width: 1200px;
+    .contentLeft {
+      max-width: 555px;
+
+      .contentHeader {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        .barName {
+          font-size: 28px;
+          line-height: 36px;
+          .innerInf {
+            display: flex;
+            font-size: 14px;
+            column-gap: 27px;
+            div {
+              display: flex;
+              column-gap: 8px;
+            }
+          }
+        }
+        .starRating {
+          padding-left: 40px;
+        }
+
+        @media screen and (max-width: 630px) {
+          column-gap: 10px;
+        }
+        @media screen and (max-width: 570px) {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+          .barName {
+            .innerInf {
+              justify-content: center;
+              div {
+                display: flex;
+                column-gap: 8px;
+              }
+            }
+          }
+          .starRating {
+            padding-left: 60px;
+          }
+        }
+      }
+      .aboutBarText {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-top: 35px;
+      }
+    }
+    .contentRight {
+      margin-top: -40px;
+    }
+
+    @media screen and (max-width: 1241px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+      .contentLeft {
+        max-width: 1000px;
+        width: 100%;
+      }
+    }
+  }
+
+  .barLocation {
+    display: flex;
+    margin-top: 80px;
+    .map {
+      min-height: 800px;
+      max-width: 700px;
+      width: 100%;
+
+      iframe {
+        width: 90%;
+        height: 70%;
+        border: none;
+        border-radius: 10px;
+      }
+    }
+    .barDescribe {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        font-size: 16px;
+        li {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+        }
+      }
+      h2 {
+        color: $fontTitleColor;
+      }
+      .describe {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+      .contacts {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .barDescribe {
+        padding-left: 40px;
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      flex-direction: column-reverse;
+      row-gap: 80px;
+      .map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        iframe {
+          height: 400px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .map {
+        iframe {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+.starIconsBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21px;
+
+  .starIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .redStarIcons {
+    filter: invert(14%) sepia(63%) saturate(6283%) hue-rotate(358deg) brightness(87%) contrast(120%);
+  }
+}

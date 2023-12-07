@@ -1,0 +1,71 @@
+.videoCover {
+  max-width: 330px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    max-width: none;
+  }
+  .videoCoverImg {
+    max-width: 330px;
+    width: 100%;
+  }
+
+  .playIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @media screen and (max-width: 800px) {
+      right: 28%;
+    }
+    @media screen and (max-width: 700px) {
+      right: 24%;
+    }
+    @media screen and (max-width: 600px) {
+      right: 20%;
+    }
+    @media screen and (max-width: 500px) {
+      right: 10%;
+    }
+    @media screen and (max-width: 400px) {
+      right: 5%;
+    }
+  }
+  .innerContent {
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
+    cursor: pointer;
+    @media screen and (max-width: 800px) {
+      left: 30%;
+    }
+    @media screen and (max-width: 700px) {
+      left: 25%;
+    }
+    @media screen and (max-width: 600px) {
+      left: 20%;
+    }
+    @media screen and (max-width: 500px) {
+      left: 13%;
+    }
+    @media screen and (max-width: 400px) {
+      left: 5%;
+    }
+
+    .contentViews {
+      margin-bottom: 10px;
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .videoCoverImg {
+      position: relative;
+    }
+  }
+}

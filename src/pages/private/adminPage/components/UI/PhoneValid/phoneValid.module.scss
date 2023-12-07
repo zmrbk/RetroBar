@@ -1,0 +1,32 @@
+.wrongUrl {
+  padding: 5px;
+  margin-bottom: 42px;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid gray;
+  color: red !important;
+}
+
+.inputWrongNameLink {
+  margin-bottom: 17px;
+  color: red;
+  font-weight: 600;
+  position: absolute;
+  margin-top: -40px;
+}
+
+.NameBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  margin: 10px 0 10px 0;
+}
+
+.name {
+  color: white;
+  font-weight: 600;
+  line-height: 24px;
+}

@@ -1,0 +1,268 @@
+.bookNowBg2 {
+  background-image: url("../../../../../assets/mainPage/bookNow/bookNowBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  margin-top: -13%;
+  box-shadow: inset 40px 120px 90px 120px rgba(0, 0, 0, 0.6);
+
+  .bookNowContent2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    .bookNowLeft2 {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      align-items: center;
+      left: 37%;
+      margin-top: 58%;
+
+      .bookNowImg2 {
+        width: 36%;
+        height: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        margin-bottom: -22%;
+        left: 186.74px;
+      }
+    }
+
+    .bookNowRight2 {
+      width: 100%;
+      max-width: 1520px;
+      margin-top: 12%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-right: -20%;
+      margin-top: 32%;
+
+      .title2 {
+        font-weight: 700;
+        font-size: 48px;
+      }
+
+      .text2 {
+        margin-top: 10%;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 25px;
+        color: #ffffff;
+        width: 863px;
+      }
+
+      .btn2 {
+        margin-top: 10%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 2300px) {
+    .bookNowContent2 {
+      .bookNowLeft2 {
+        .bookNowImg2 {
+          margin-top: -10%;
+          margin-left: -2%;
+          width: 33%;
+          height: 56%;
+        }
+      }
+
+      .bookNowRight2 {
+        margin-top: 300px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1445px) {
+    .bookNowContent2 {
+      max-width: 990px;
+
+      .bookNowLeft2 {
+        max-width: 490px;
+        margin-top: 64%;
+
+        .bookNowImg2 {
+          margin-left: -2%;
+          width: 43%;
+          height: 60%;
+        }
+      }
+
+      .bookNowRight2 {
+        max-width: 450px;
+        margin-left: -20%;
+
+        .title2 {
+          font-size: 26px;
+        }
+
+        .text2 {
+          font-size: 16px;
+          line-height: 19px;
+          width: 450px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .bookNowContent2 {
+      max-width: 990px;
+
+      .bookNowLeft2 {
+        max-width: 250px;
+        margin-top: 48%;
+
+        .bookNowImg2 {
+          margin-left: -4%;
+          width: 40%;
+          height: 40%;
+        }
+      }
+
+      .bookNowRight2 {
+        max-width: 350px;
+        margin-left: -45%;
+
+        .title2 {
+          font-size: 18px;
+          margin-top: 10%;
+        }
+
+        .text2 {
+          margin-top: 14%;
+          font-size: 16px;
+          line-height: 16px;
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .bookNowContent2 {
+      max-width: 790px;
+
+      .bookNowLeft2 {
+        max-width: 250px;
+        margin-top: 68%;
+
+        .bookNowImg2 {
+          margin-left: -8%;
+          width: 40%;
+          height: 40%;
+        }
+      }
+
+      .bookNowRight2 {
+        max-width: 150px;
+        margin-left: -80%;
+
+        .title2 {
+          font-size: 18px;
+        }
+
+        .text2 {
+          font-size: 14px;
+          line-height: 15px;
+          width: 230px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .bookNowContent2 {
+      flex-direction: column;
+      padding-top: 80%;
+      height: 500px;
+
+      .bookNowLeft2 {
+        .bookNowImg2 {
+          width: 60%;
+          height: 30%;
+          margin-left: -25%;
+        }
+      }
+
+      .bookNowRight2 {
+        align-self: center;
+        margin-right: -85%;
+
+        .title2 {
+          font-size: 18px;
+          width: 330px;
+          margin-top: -200px;
+        }
+
+        .text2 {
+          font-size: 14px;
+          line-height: 16px;
+          width: 330px;
+        }
+
+        .btn2 {
+          margin-top: 20%;
+          margin-left: -20%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .bookNowContent2 {
+      flex-direction: column;
+      padding-top: 100%;
+      height: 500px;
+      width: 100%;
+
+      .bookNowLeft2 {
+        .bookNowImg2 {
+          width: 290px;
+          height: 30%;
+          margin-left: -40%;
+        }
+      }
+
+      .bookNowRight2 {
+        margin-left: -80%;
+
+        .text2 {
+          font-size: 14px;
+          line-height: 15px;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 321px) {
+    .bookNowContent2 {
+      width: 90%;
+      padding-top: 400px;
+      margin-top: 100px;
+
+      .bookNowLeft2 {
+        .bookNowImg2 {
+          width: 270px;
+          height: 30%;
+          margin-left: -48%;
+          margin-top: -40%;
+        }
+      }
+
+      .bookNowRight2 {
+        margin-top: 66%;
+      }
+    }
+  }
+}

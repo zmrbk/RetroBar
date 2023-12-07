@@ -1,0 +1,141 @@
+@import "../../../styles/primaryColors.scss";
+
+.errorPage {
+  margin-top: -125px;
+  padding-top: 120px;
+  background-image: url("../../../assets/errorPage/errorBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1100px) {
+      max-width: 900px;
+    }
+
+    @media screen and (max-width: 900px) {
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding-top: 15%;
+      flex-direction: column;
+      width: 90%;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-top: 30%;
+    }
+
+    .contentLeft {
+      width: 45%;
+      padding: 10% 0 8% 2%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: 800px) {
+        text-align: center;
+      }
+
+      .contentLeftWidth {
+        width: 100%;
+
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: $fontTitleColor;
+          margin-bottom: 4%;
+
+          @media screen and (max-width: 800px) {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 16px;
+          }
+        }
+
+        .text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: $primaryColor;
+          margin-bottom: 7%;
+
+          @media screen and (max-width: 800px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 12px;
+          }
+        }
+
+        .search {
+          padding-left: 2%;
+
+          @media screen and (max-width: 800px) {
+            padding-right: 50%;
+          }
+
+          @media screen and (max-width: 600px) {
+            padding-right: 0%;
+          }
+        }
+
+        .btnToMain {
+          margin-top: 10%;
+          display: flex;
+          justify-content: flex-end;
+
+          @media screen and (max-width: 800px) {
+            display: flex;
+            justify-content: start;
+          }
+
+          @media screen and (max-width: 600px) {
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .contentRight {
+      width: 55%;
+      position: relative;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+
+      .imageError {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .errorPage {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

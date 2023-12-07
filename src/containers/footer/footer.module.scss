@@ -1,0 +1,123 @@
+.footer {
+  background-image: url(../../assets/footer/footerBg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding: 90px;
+  margin-top: auto;
+  @media screen and (max-width: 1100px) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 30px;
+  }
+}
+
+.content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 110px;
+  &__staticInformation {
+    display: flex;
+    flex-direction: column;
+    .headerLogo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      span {
+        font-size: 26px;
+        font-weight: 600;
+        color: white;
+      }
+      img {
+        margin-left: 5px;
+      }
+    }
+    .spans {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      column-gap: 15px;
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 142%;
+    }
+  }
+
+  &__navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      a {
+        color: #fff;
+        li {
+          transition: 0.2s;
+          padding: 5px;
+          border: 1px solid transparent;
+          &:hover {
+            border-bottom: 1px solid #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  &__socialMedias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      margin-top: 70px;
+      font-weight: 600;
+    }
+    .socialMedias {
+      display: flex;
+      column-gap: 25px;
+      margin-top: 25px;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    column-gap: 70px;
+  }
+  @media screen and (max-width: 900px) {
+    column-gap: 40px;
+  }
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+    &__navigation {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    &__navigation {
+      display: none;
+    }
+
+    &__socialMedias {
+      flex-direction: column-reverse;
+      span {
+        order: 1;
+        margin-top: 60px;
+        font-weight: 600;
+      }
+    }
+    &__staticInformation {
+      text-align: center;
+      .headerLogo {
+        margin: 0 auto;
+        position: absolute;
+        top: 5%;
+        padding-left: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.formContainer {
+  width: 80%;
+  margin-top: -40px;
+
+  h2 {
+    float: left;
+    margin: 154px 0px 0px 226px;
+    cursor: pointer;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 190px 0px 170px 38px;
+
+    .contactInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .formLeft {
+        width: 50%;
+        max-width: 610px;
+        top: 241px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45px;
+
+        h3 {
+          justify-content: flex-start;
+        }
+
+        .addPhoto {
+          width: 450px;
+          margin: 58px 63px 92px 36px;
+        }
+
+        .addLink {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          max-width: 400px;
+          margin-left: -70px;
+
+          .linkIcon {
+            width: 16px;
+            height: 20px;
+            margin: 5px;
+            margin-bottom: 17px;
+          }
+        }
+      }
+
+      .formRight {
+        width: 50%;
+        max-width: 610px;
+        top: 241px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 40px 63px 92px 0px;
+        gap: 20px;
+
+        .charCount {
+          width: 236px;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          opacity: 0.8;
+          margin: -17px 0 36px 0;
+        }
+
+        .wrongUrl {
+          padding: 5px;
+          margin-bottom: 42px;
+          background: transparent;
+          outline: none;
+          border: none;
+          width: 400px;
+          border-bottom: 1px solid gray;
+          color: red;
+        }
+
+        .inputWrongNameLink {
+          margin-bottom: 17px;
+          color: red;
+          font-weight: 600;
+          justify-content: flex-start;
+        }
+
+        .addLink {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          max-width: 400px;
+        }
+      }
+    }
+
+    .descForm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: -78px;
+      margin-left: -226px;
+
+      .twoForms {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 112px;
+
+        .formRight {
+          display: flex;
+          justify-content: center;
+          align-self: flex-start;
+        }
+      }
+
+      .NameBlock {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 11px;
+      }
+
+      .bigName {
+        margin-bottom: 20px;
+        margin-left: 0;
+        color: #ffb03b;
+      }
+    }
+  }
+}

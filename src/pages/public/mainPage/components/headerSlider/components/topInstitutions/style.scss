@@ -1,0 +1,250 @@
+.topInstitutionSwiper {
+  padding: 8% 0;
+
+  .swiper-slide {
+    transition: all 200ms linear;
+    transform: scale(1) !important;
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.3) !important;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    filter: grayscale(100%);
+    opacity: 0.9;
+  }
+}
+
+.topInstitutionBg {
+  .topInstitutionContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .topInstitutionTitle {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 39px;
+      margin-left: 8%;
+    }
+  }
+
+  .filmContent {
+    .filmSlide {
+      position: relative;
+
+      .filmSlideFrame {
+        position: relative;
+        width: 100%;
+        transform: rotate(3deg);
+      }
+
+      .filmSlidePhoto {
+        position: absolute;
+        width: 95%;
+        height: 65.5%;
+        top: 13%;
+        left: 1.5%;
+        transform: rotate(3deg);
+      }
+
+      .filmSlidePhotoContent {
+        position: absolute;
+        top: 18%;
+        left: 8%;
+        transform: rotate(3deg);
+        width: 300px;
+
+        .filmTitle {
+          font-family: "Mont";
+          font-weight: 800;
+          font-size: 23px;
+          margin-bottom: 10%;
+        }
+
+        .filmAddress {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+
+          .filmAddressIcon {
+            width: 10px;
+            height: 10px;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .topInstitutionBg {
+    .filmContent {
+      .filmSlide {
+        .filmSlidePhotoContent {
+          margin-left: -1%;
+          width: 250px;
+
+          .filmTitle {
+            font-size: 19px;
+          }
+
+          .filmAddress {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .topInstitutionBg {
+    .filmContent {
+      .filmSlide {
+        .filmSlidePhotoContent {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .topInstitutionBg {
+    .filmContent {
+      .filmSlide {
+        .filmSlidePhotoContent {
+          margin-top: -10px;
+          margin-left: -5%;
+
+          .filmTitle {
+            font-size: 17px;
+          }
+
+          .filmAddress {
+            font-size: 12px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .topInstitutionBg {
+    margin-top: 10%;
+
+    .filmContent {
+      margin-top: 10%;
+
+      .filmSlide {
+        .filmSlideFrame {
+          width: 400px;
+          margin-left: -30%;
+        }
+
+        .filmSlidePhoto {
+          margin-top: -1px;
+          width: 385px;
+          height: 154px;
+          margin-left: -29%;
+        }
+
+        .filmSlidePhotoContent {
+          margin-left: -30%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topInstitutionBg {
+    margin-top: 20%;
+    transform: translate3d(0, 0, 0);
+
+    .filmContent {
+      margin-top: 30%;
+
+      .filmSlide {
+        .filmSlideFrame {
+          width: 300px;
+          margin-left: -30%;
+        }
+
+        .filmSlidePhoto {
+          margin-top: -1px;
+          width: 285px;
+          height: 114px;
+          margin-left: -26%;
+        }
+
+        .filmSlidePhotoContent {
+          margin-left: -31%;
+
+          .filmTitle {
+            font-size: 10px;
+          }
+
+          .filmAddress {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .topInstitutionBg {
+    padding-top: 10%;
+    margin-bottom: -20%;
+    width: 154%;
+    padding-left: -45%;
+    margin-left: -50%;
+
+    .topInstitutionContainer {
+      margin-left: 35%;
+    }
+
+    .filmContent {
+      margin-top: 30%;
+      margin-bottom: 30%;
+
+      .filmSlide {
+        .filmSlideFrame {
+          margin-left: 0;
+        }
+
+        .filmSlidePhoto {
+          margin-left: 0;
+        }
+
+        .filmSlidePhotoContent {
+          margin-top: -8px;
+
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .title {
+    .bigStar {
+      display: none;
+    }
+
+    .smallStar {
+      display: none;
+    }
+  }
+}
